@@ -1,6 +1,2 @@
 node_modules
-local-example
-promise
-
-package-lock.json
-pdfkit-guide.pdf
+yarn.lock

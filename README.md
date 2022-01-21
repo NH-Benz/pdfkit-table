@@ -151,9 +151,9 @@ npm install pdfkit-table
   };
 
   doc.table(table, {
-    prepareHeader: () => doc.font("Helvetica-Bold").fontSize(8),
+    prepareHeader: () => doc.font("Sarabun-Bold").fontSize(8),
     prepareRow: (row, indexColumn, indexRow, rectRow, rectCell) => {
-      doc.font("Helvetica").fontSize(8);
+      doc.font("Sarabun").fontSize(8);
       indexColumn === 0 && doc.addBackground(rectRow, 'blue', 0.15);
     },
   });
@@ -308,8 +308,8 @@ const options = {
   padding: 5, // {Number} default: 0
   columnSpacing: 5, // {Number} default: 5
   // functions
-  prepareHeader: () => doc.font("Helvetica-Bold").fontSize(8), // {Function} 
-  prepareRow: (row, indexColumn, indexRow, rectRow, rectCell) => doc.font("Helvetica").fontSize(8), // {Function} 
+  prepareHeader: () => doc.font("Sarabun-Bold").fontSize(8), // {Function} 
+  prepareRow: (row, indexColumn, indexRow, rectRow, rectCell) => doc.font("Sarabun").fontSize(8), // {Function} 
 }
 ```
 
@@ -363,10 +363,10 @@ datas: [
   - Courier-Bold
   - Courier-Oblique
   - Courier-BoldOblique
-- Helvetica
-  - Helvetica-Bold
-  - Helvetica-Oblique
-  - Helvetica-BoldOblique
+- Sarabun
+  - Sarabun-Bold
+  - Sarabun-Oblique
+  - Sarabun-BoldOblique
 - Symbol
 - Times-Roman
   - Times-Bold
